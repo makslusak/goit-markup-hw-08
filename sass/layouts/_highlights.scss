@@ -1,0 +1,37 @@
+.highlights__list {
+    display: flex;
+}
+
+.highlights__item {
+    width: 270px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+
+
+.highlights__thumb {
+    background-color: var(--grey-color);
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlights__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--titles-color);
+    margin: 0px 0px 10px 0px;
+}
+
+.highlights__par {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}

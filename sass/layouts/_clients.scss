@@ -1,0 +1,32 @@
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients__link {
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--logo-gray);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition(null, border-color, null, null);
+    &:hover,
+    &:focus {
+            border-color: var(--acent-color);
+        }
+}
+
+.clients__logo {
+    fill: var(--logo-gray);
+    @include transition(fill, null, null, null);
+    .clients__link:hover &,
+        .clients__link:focus & {
+            fill: var(--acent-color);
+        }
+}
+
+
+
