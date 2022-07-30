@@ -1,13 +1,29 @@
 .works {
+    @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    flex-basis: calc((100% - 60px) / 3);
+        
+    }
+
+   
 }
+
 
 .works__item {
     @include transition(box-shadow, null, box-null, null);
+    @media screen and (max-width:767px) {
+        margin-bottom: 30px;    
+    }
+    @media screen and (min-width:768px) {
+        width: 354px;
+        min-height: 146px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 370px;
+        min-height: 110px;
+         }
 }
 
 .works__item:hover {
@@ -21,7 +37,7 @@
 }
 
 .works__image {
-    display: block;
+width: 100%;
 }
 
 .works__thumb {
@@ -54,6 +70,13 @@
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+        @media screen and (min-width:768px) {
+                min-height: 146px;
+            }
+        @media screen and (min-width:1200px) {
+                min-height: 110px;
+            }
+
 }
 
 .works__title {

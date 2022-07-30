@@ -1,13 +1,20 @@
 .btn-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        row-gap: 15px;
+        column-gap: 8px;
+        @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+        }
+                @media screen and (min-width: 1200px) {
+                    justify-content: center;
+                    margin-bottom: 50px;
+                }
+    }
 
-.btn-list__item:not(:last-child) {
-    margin-right: 8px;
-}
 
 .btn-list__button {
     background: var(--grey-color);
@@ -23,18 +30,17 @@
     padding: 6px 22px;
     cursor: pointer;
     @include transition(color, background-color, box-shadow, null);
-}
-
-.btn-list__button:hover,
-.btn-list__button:focus {
-    background: var(--acent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    &:hover,
+    &:focus {
+        background: var(--acent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    color: var(--white-color);
+        border-radius: 4px;
+        color: var(--white-color);
+    }
 }
 
-.btn-list__button:active {
-    background-color: var(--grey-color);
-    color: var(--acent-color);
-}
+
+
+
+
