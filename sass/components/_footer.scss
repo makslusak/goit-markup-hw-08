@@ -153,6 +153,9 @@
     @media screen and(min-width:1200px) {
         width: 358px;
     }
+        @media screen and(max-width:480px) {
+            width: 250px;
+            }
 
     &:focus {
         border: 1px solid #fff;

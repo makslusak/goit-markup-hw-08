@@ -116,10 +116,19 @@ body {
   display: inline-block;
   font-family: var(--second-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 0.86;
   letter-spacing: 0.03em;
   color: var(--acent-color);
+}
+.logo__link:hover *, .logo__link:focus * {
+  color: var(--acent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo__link {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 .logo__link:hover *, .logo__link:focus * {
   color: var(--acent-color);
@@ -145,6 +154,144 @@ body {
 
 .logo--footer {
   margin: 0px 0px 20px 0px;
+}
+
+.mobil__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.closed {
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mobil__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  fill: var(--titles-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobil__close-btn:hover, .mobil__close-btn:focus {
+  fill: var(--acent-color);
+  outline: none;
+}
+
+.header__nav {
+  flex-grow: 1;
+}
+
+.nav__item {
+  margin-bottom: 32px;
+}
+
+.nav__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover, .nav__link:focus {
+  color: var(--acent-color);
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.header__link svg {
+  display: none;
+}
+
+.header__phone {
+  margin-bottom: 32px;
+}
+.header__phone a {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__phone a:hover, .header__phone a:focus {
+  color: var(--titles-color);
+}
+
+.header__mail {
+  margin-bottom: 64px;
+}
+.header__mail a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__mail a:hover, .header__mail a:focus {
+  color: var(--titles-color);
+}
+
+.mobil__socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.mobil__item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin: 0 10px;
+}
+
+.mobil__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--acent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobil__link:hover, .mobil__link:focus {
+  color: var(--titles-color);
 }
 
 .footer {
@@ -312,6 +459,11 @@ body {
     width: 358px;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer__form-field > input {
+    width: 250px;
+  }
+}
 .footer__form-field > input:focus {
   border: 1px solid #fff;
   outline: none;
@@ -347,13 +499,20 @@ body {
 }
 
 .titles {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
   color: var(--titles-color);
-  margin: 0px 0px 50px 0px;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 30px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .titles {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0px 0px 50px 0px;
+  }
 }
 
 .contacts__container {

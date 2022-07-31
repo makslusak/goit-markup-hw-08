@@ -1,3 +1,9 @@
+.tasks {
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
+}
+
 
 .tasks__list {
     display: flex;
@@ -34,3 +40,39 @@
     text-transform: uppercase;
     color: var(--white-color);
 }
+
+// .tasks__list {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-bottom: 94px;
+// }
+
+// .tasks__item {
+//     position: relative;
+// }
+
+// .tasks__img {
+//     display: block;
+// }
+
+// .tasks__overlay {
+//     position: absolute;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: rgba(47, 48, 58, 0.8);
+//     bottom: 0;
+//     width: 100%;
+//     height: 70px;
+// }
+
+// .tasks__description {
+//     position: absolute;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: var(--white-color);
+// }

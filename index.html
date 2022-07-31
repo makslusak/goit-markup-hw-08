@@ -18,11 +18,22 @@
         <!-- Header================================================== -->
         <header class="header">
             <div class="header__container container">
-                <nav class="header__nav nav">
                     <div class="logo logo--header">
                     <a href="./" class="logo__link">Web<span class="logo--black-studio">studio</span>
                     </a>
                     </div>
+                    <button class="mobil__menu-btn" type="button">
+                        <svg class="mobil__menu-icon" width="24px" height="16px">
+                            <use href="./images/icons.svg#mobilmenu"></use>
+                        </svg>
+                    </button>
+                    <div class="mobil__container">
+                    <button class="mobil__close-btn" type="button">
+                        <svg class="mobil__close-icon" width="19px" height="19px">
+                            <use href="./images/icons.svg#mobilclose"></use>
+                        </svg>
+                    </button>
+                    <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item ">
                             <a href="./" class="nav__link curent-link">Студія</a>
@@ -34,8 +45,8 @@
                             <a href="./contacts.html" class="nav__link">Контакти</a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="header__contacts">
+                    </nav>
+                    <ul class="header__contacts">
                     <li class="header__mail">
                         <a href="mailto:info@devstudio.com" class="header__link">
                             <svg width="16px" height="16px" class="header__icon">
@@ -51,15 +62,24 @@
                             </svg>
                             +380961111111</a>
                     </li>
-                </ul>
+                    </ul>
+                    <ul class="mobil__socials">
+                        <li class="mobil__item"><a href="" class="mobil__link">Instagram</a></li>
+                        <li class="mobil__item"><a href="" class="mobil__link">Twitter</a></li>
+                        <li class="mobil__item"><a href="" class="mobil__link">Facebook</a></li>
+                        <li class="mobil__item"><a href="" class="mobil__link">LinkedIn</a></li>
+                    </ul>
+                    </div>
             </div>
         </header>
         <!--Main content========================================== -->
         <main>
             <!--Hero ==================================== -->
             <section class="hero hero__overlay">
-                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+                <div class="container">
+                    <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                    <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+                </div>
             </section>
             <!--Highlights========================================== -->
             <section class="section">
@@ -146,7 +166,7 @@
                     <h2 class="team__title titles">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img class="team__img" src="./images/img(2).jpg" alt="Дизайнер" width="270"/>
+                            <img class="team__img" src="./images/img(2).jpg" alt="Дизайнер" min-width="270"/>
                             <div class="team__card">
                                 <h3 class="team__member">Ігор Дем'яненко</h3>
                                 <p class="team__member-position" lang="en">Product Designer</p>
@@ -176,7 +196,7 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/img(3).jpg" alt="Разработчик" width="270"/>
+                            <img class="team__img" src="./images/img(3).jpg" alt="Разработчик" min-width="270"/>
                             <div class="team__card">
                                 <h3 class="team__member">Ольга Репіна</h3>
                                 <p class="team__member-position" lang="en">Frontend Developer</p>
@@ -206,7 +226,7 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/img(4).jpg" alt="Маркетолог" width="270"/>
+                            <img class="team__img" src="./images/img(4).jpg" alt="Маркетолог" min-width="270"/>
                             <div class="team__card">
                                 <h3 class="team__member">Микола Тарасов</h3>
                                 <p class="team__member-position" lang="en">Marketing</p>
@@ -236,7 +256,7 @@
                             </div>
                         </li>
                         <li class="team__item">
-                            <img class="team__img" src="./images/img(5).jpg" alt="Дизайнер" width="270"/>
+                            <img class="team__img" src="./images/img(5).jpg" alt="Дизайнер" min-width="270"/>
                             <div class="team__card">
                                 <h3 class="team__member">Михайло Єрмаков</h3>
                                 <p class="team__member-position" lang="en">UI Designer</p>
