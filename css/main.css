@@ -181,7 +181,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .mobil__container {
     position: fixed;
     z-index: 3;
@@ -220,7 +220,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 99;
+  z-index: 5;
   width: 40px;
   height: 40px;
   border: none;
@@ -343,7 +343,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .header__link svg {
     display: none;
   }
@@ -376,7 +376,7 @@ body {
 .header__phone:hover, .header__phone:focus {
   color: var(--titles-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .header__phone {
     margin-bottom: 32px;
   }
@@ -395,7 +395,7 @@ body {
 .header__mail:hover, .header__mail:focus {
   color: var(--titles-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .header__mail {
     margin-bottom: 64px;
   }
@@ -541,7 +541,7 @@ body {
   display: block;
   margin: 0 auto;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .hero__button {
     padding: 10px 24px;
   }
@@ -560,7 +560,7 @@ body {
   display: flex;
   gap: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .highlights__list {
     flex-wrap: wrap;
     justify-content: center;
@@ -596,7 +596,7 @@ body {
   color: var(--titles-color);
   margin: 0px 0px 10px 0px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .highlights__title {
     display: flex;
     justify-content: center;
@@ -609,7 +609,7 @@ body {
   color: var(--text-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .tasks {
     display: none;
   }
@@ -659,7 +659,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .team__list {
     gap: 30px;
     flex-wrap: wrap;
@@ -747,14 +747,14 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .clients__list {
     gap: 30px;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .clients__item {
     flex-grow: 1;
   }
@@ -797,12 +797,11 @@ body {
   padding: 60px 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__item {
     text-align: center;
   }
 }
-
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -831,7 +830,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .footer__container {
     flex-direction: column;
     align-items: center;
@@ -843,7 +842,7 @@ body {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__container > div:not(:last-child) {
     margin-bottom: 60px;
   }
@@ -864,7 +863,7 @@ body {
     margin-right: 70px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__adress {
     align-items: center;
   }
@@ -880,7 +879,7 @@ body {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__title {
     display: flex;
     justify-content: center;
@@ -957,7 +956,7 @@ body {
     width: 358px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480.7px) {
   .footer__form-field > input {
     width: 250px;
   }
@@ -998,10 +997,12 @@ body {
 
 .backdrop {
   position: fixed;
+  z-index: 10;
   opacity: 1;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2px);
@@ -1017,6 +1018,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   max-width: 450px;
+  max-height: 100vh;
+  overflow: auto;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -1117,7 +1120,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479.7px) {
   .modal__input {
     width: 80vw;
   }
@@ -1155,7 +1158,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479.7px) {
   .modal__text {
     width: 80vw;
   }

@@ -181,7 +181,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .mobil__container {
     position: fixed;
     z-index: 3;
@@ -220,7 +220,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 99;
+  z-index: 5;
   width: 40px;
   height: 40px;
   border: none;
@@ -343,7 +343,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .header__link svg {
     display: none;
   }
@@ -376,7 +376,7 @@ body {
 .header__phone:hover, .header__phone:focus {
   color: var(--titles-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .header__phone {
     margin-bottom: 32px;
   }
@@ -395,7 +395,7 @@ body {
 .header__mail:hover, .header__mail:focus {
   color: var(--titles-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .header__mail {
     margin-bottom: 64px;
   }
@@ -469,12 +469,11 @@ body {
   padding: 60px 0;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__item {
     text-align: center;
   }
 }
-
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -503,7 +502,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.7px) {
   .footer__container {
     flex-direction: column;
     align-items: center;
@@ -515,7 +514,7 @@ body {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__container > div:not(:last-child) {
     margin-bottom: 60px;
   }
@@ -536,7 +535,7 @@ body {
     margin-right: 70px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__adress {
     align-items: center;
   }
@@ -552,7 +551,7 @@ body {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.7px) {
   .footer__title {
     display: flex;
     justify-content: center;
@@ -629,7 +628,7 @@ body {
     width: 358px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480.7px) {
   .footer__form-field > input {
     width: 250px;
   }

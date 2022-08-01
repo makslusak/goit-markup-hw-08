@@ -52,7 +52,7 @@
     @include transition(color, background-color, null, null);
     display: block;
     margin: 0 auto;
-    @media screen and(max-width:1199px) {
+    @media screen and(max-width:1199.7px) {
     padding: 10px 24px;
     }
     &:hover,

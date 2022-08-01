@@ -1,7 +1,7 @@
 .highlights__list {
     display: flex;
     gap: 30px;
-    @media screen and(max-width:1199px) {
+    @media screen and(max-width:1199.7px) {
         flex-wrap: wrap;
         justify-content: center;
         
@@ -40,7 +40,7 @@
     text-transform: uppercase;
     color: var(--titles-color);
     margin: 0px 0px 10px 0px;
-    @media screen and(max-width:767px) {
+    @media screen and(max-width:767.7px) {
         display: flex;
         justify-content: center;
     
