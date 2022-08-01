@@ -18,45 +18,64 @@
     <link href="./css/contacts.min.css" rel="stylesheet" />
 </head>
 <body>
-    <!--Header=================================================== -->
-<header class="header">
-    <div class="header__container container">
-        <nav class="header__nav nav">
+    <!-- Header================================================== -->
+    <header class="header">
+        <div class="header__container container">
             <div class="logo logo--header">
                 <a href="./" class="logo__link">Web<span class="logo--black-studio">studio</span>
                 </a>
             </div>
-            <ul class="nav__list">
-                <li class="nav__item ">
-                    <a href="./" class="nav__link">Студія</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./portfolio.html" class="nav__link ">Портфоліо</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./contacts.html" class="nav__link curent-link">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="header__contacts">
-            <li class="header__mail">
-                <a href="mailto:info@devstudio.com" class="header__link">
-                    <svg width="16px" height="16px" class="header__icon">
-                        <use href="./images/icons.svg#mail">
-                        </use>
-                    </svg>
-                    info@devstudio.com</a>
-            </li>
-            <li class="header__phone">
-                <a href="tel:+380961111111" class="header__link">
-                    <svg width="16px" height="16px" class="header__icon">
-                        <use href="./images/icons.svg#phone"></use>
-                    </svg>
-                    +380961111111</a>
-            </li>
-        </ul>
-    </div>
-</header>
+            <button class="mobil__menu-btn" data-menu-button type="button">
+                <svg class="mobil__menu-icon" width="24px" height="16px">
+                    <use class="icon-menu" href="./images/icons.svg#mobilmenu"></use>
+                    <use class="icon-cross" href="./images/icons.svg#mobilclose"></use>
+                </svg>
+            </button>
+            <div class="mobil__container" data-menu>
+                <!-- <button class="mobil__close-btn" data-menu-button type="button">
+                            <svg class="mobil__close-icon" width="19px" height="19px">
+                                <use href="./images/icons.svg#mobilclose"></use>
+                            </svg>
+                        </button> -->
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item ">
+                            <a href="./" class="nav__link">Студія</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./portfolio.html" class="nav__link ">Портфоліо</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./contacts.html" class="nav__link curent-link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__contacts">
+                    <li class="header__mail">
+                        <a href="mailto:info@devstudio.com" class="header__link">
+                            <svg width="16px" height="16px" class="header__icon">
+                                <use href="./images/icons.svg#mail">
+                                </use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="header__phone">
+                        <a href="tel:+380961111111" class="header__link">
+                            <svg width="16px" height="16px" class="header__icon">
+                                <use href="./images/icons.svg#phone"></use>
+                            </svg>
+                            +380961111111</a>
+                    </li>
+                </ul>
+                <ul class="mobil__socials">
+                    <li class="mobil__item"><a href="" class="mobil__link">Instagram</a></li>
+                    <li class="mobil__item"><a href="" class="mobil__link">Twitter</a></li>
+                    <li class="mobil__item"><a href="" class="mobil__link">Facebook</a></li>
+                    <li class="mobil__item"><a href="" class="mobil__link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <!-- Main============================================== -->
     <main>
         <section class="contacts section">
@@ -137,6 +156,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>

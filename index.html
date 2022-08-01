@@ -22,17 +22,18 @@
                     <a href="./" class="logo__link">Web<span class="logo--black-studio">studio</span>
                     </a>
                     </div>
-                    <button class="mobil__menu-btn" type="button">
+                    <button class="mobil__menu-btn" data-menu-button type="button">
                         <svg class="mobil__menu-icon" width="24px" height="16px">
-                            <use href="./images/icons.svg#mobilmenu"></use>
+                            <use class="icon-menu" href="./images/icons.svg#mobilmenu"></use>
+                            <use class="icon-cross" href="./images/icons.svg#mobilclose"></use>
                         </svg>
                     </button>
-                    <div class="mobil__container">
-                    <button class="mobil__close-btn" type="button">
+                    <div class="mobil__container" data-menu>
+                    <!-- <button class="mobil__close-btn" data-menu-button type="button">
                         <svg class="mobil__close-icon" width="19px" height="19px">
                             <use href="./images/icons.svg#mobilclose"></use>
                         </svg>
-                    </button>
+                    </button> -->
                     <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item ">
@@ -460,6 +461,7 @@
                 
             </div>
         </div>
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
     </body>
 </html>

@@ -1,40 +1,39 @@
 .logo__link {
-        display: inline-block;
-        font-family: var(--second-font);
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 0.86;
-        letter-spacing: 0.03em;
-        &:hover *,
-        &:focus * {
-                color: var(--acent-color);
-            }
-    @media screen and(min-width:1200px) {
-    font-size: 26px;
-    line-height: 1.2;
+    display: inline-block;
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0.86;
+    letter-spacing: 0.03em;
+    &:hover *,
+    &:focus * {
+        color: var(--acent-color);
     }
-
-
-    
+    @media screen and(min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.2;
+    }
 
     color: var(--acent-color);
     &:hover *,
-        &:focus * {
-            color: var(--acent-color);
-        }
-    
+    &:focus * {
+        color: var(--acent-color);
+    }
 }
 
 .logo--header {
-    margin-right: 93px;
+    @media screen and(min-width:768px) {
+        margin-right: 87px;
+    }
+    @media screen and(min-width:1200px) {
+        margin-right: 93px;
+    }
 }
 
 .logo--black-studio {
     color: var(--black-color);
     @include transition(color, null, null, null);
 }
-
-
 
 .logo--white-studio {
     color: var(--white-color);
@@ -44,4 +43,3 @@
 .logo--footer {
     margin: 0px 0px 20px 0px;
 }
-

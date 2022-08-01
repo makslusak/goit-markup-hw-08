@@ -47,15 +47,15 @@
      align-items: baseline;
      justify-content: space-around;
  }
-    @media screen and(min-width:1200px) {
-    align-items: baseline;
-    justify-content: space-between;
-    }
     @media screen and(max-width:1199px) {
         & > div:not(:last-child) {
             margin-bottom: 60px;
         }
     }
+   @media screen and(min-width:1200px) {
+       align-items: baseline;
+       justify-content: space-between;
+       }
 
 
 }
